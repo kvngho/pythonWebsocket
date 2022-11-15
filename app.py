@@ -3,6 +3,7 @@ import itertools
 import json
 from connect4 import PLAYER1, PLAYER2, Connect4
 import websockets
+import secrets
 
 async def handler(websocket):
     game = Connect4()
