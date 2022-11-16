@@ -8,7 +8,7 @@
    websocket.addEventListener("message", ({ data }) => {
      const event = JSON.parse(data);
     switch (event.type) {
-      case "play":
+      case "chat":
         // Update the UI with the move.
         playMove(board, event.player, event.column, event.row);
        break;
